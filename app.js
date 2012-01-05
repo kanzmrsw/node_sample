@@ -5,9 +5,9 @@ var fcgiApp = require("./fcgi"),
 var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
 		res.writeHead(200, {"Content-type": "text/html"});
-		res.end("It works! by kanzmrsw !" + Date.now());
-		res.end("はろ〜世界！");
+		res.end("It works! by kanzmrsw !\n はろ〜世界！" + Date.now());
 		console.log("Wrote response.");
+		console.log("こっちも日本語出る？");
 	}, 1000);
 	//throw new Error("Bollocks.");
 });
