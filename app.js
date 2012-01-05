@@ -5,7 +5,7 @@ var fcgiApp = require("./fcgi"),
 var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
 		res.writeHead(200, {"Content-type": "text/html; charse=utf-8"});
-		res.write("<html><body>It works! by kanzmrsw ! はろ〜世界！</body></html>" + Date.now());
+		res.write("It works! by kanzmrsw !" + Date.now());
 		res.end();
 		console.log("Wrote response.");
 		console.log("こっちも日本語出る？");
