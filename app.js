@@ -6,6 +6,7 @@ var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
 		res.writeHead(200, {"Content-type": "text/html"});
 		res.end("It works! by kanzmrsw !" + Date.now());
+		res.end("はろ〜世界！");
 		console.log("Wrote response.");
 	}, 1000);
 	//throw new Error("Bollocks.");
