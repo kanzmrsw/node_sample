@@ -4,11 +4,10 @@ var fcgiApp = require("./fcgi"),
 
 var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
-		res.writeHead(200, {"Content-type": "text/html; charse=utf-8"});
+		res.writeHead(200, {"Content-type": "text/html"});
 		res.write("It works! by kanzmrsw !" + Date.now());
 		res.end();
 		console.log("Wrote response.");
-		console.log("こっちも日本語出る？");
 	}, 1000);
 	//throw new Error("Bollocks.");
 });
