@@ -6,7 +6,6 @@ var myServer = http.createServer(function(req, res) {
             "Content-type" : "text/html"
         });
         res.write("It works! by kanzmrsw !" + Date.now());
-        res.write("It works! by kanzmrsw !" + Date.now());
         res.end();
         console.log("Wrote response.");
     }, 1000);
